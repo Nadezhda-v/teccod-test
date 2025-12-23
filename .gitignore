@@ -1,0 +1,16 @@
+# dependencies
+/node_modules
+.idea
+package-lock.json
+
+# production
+/build
+
+# misc
+.env.local
+.DS_Store
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*

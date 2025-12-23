@@ -1,0 +1,32 @@
+.services-list {
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    color: var(--text-color);
+  }
+
+  &__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) {
+    .services-list__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .services-list__grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .services-list__grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.selected-service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+  gap: 1rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &__info {
+    flex: 1;
+    min-width: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+
+  &__title {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__quantity {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    background: var(--bg-color);
+    padding: 0.125rem 0.5rem;
+    border-radius: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  &__description {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin: 0;
+    overflow: hidden;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__unit-price {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    display: flex;
+  }
+
+  &__remove-btn {
+    white-space: nowrap;
+
+    & svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  @media (min-width: 640px) {
+    .selected-service-item__controls {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .selected-service-item__remove-btn {
+      padding: 0.25rem 0.75rem;
+      font-size: 0.75rem;
+    }
+  }
+}
