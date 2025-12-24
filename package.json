@@ -1,5 +1,5 @@
 {
-  "name": "nornickel-test-assignment",
+  "name": "teccod-test",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -34,7 +34,6 @@
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "8.24.0",
     "eslint-config-airbnb": "19.0.4",
-    "eslint-config-alloy": "4.9.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-config-react-app": "7.0.1",
     "eslint-import-resolver-alias": "1.1.2",
